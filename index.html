@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+            #content{
+                width:900px;
+                margin: 0 auto;
+            }
+            #mycanvas{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            textarea{
+                width: 100%; 
+                border: 1px solid #333; 
+                padding: 4px;
+                font-size: 18px;
+            }
+            button{
+                display: block;
+                width: 100%;
+                height:100%;
+            }
+            table{
+                width:180px;
+            }
+            td{
+                text-align: right;
+                height:30px;
+            }
+        </style>
+
+        <script src="jquery-2.1.4.min.js"></script>
+        <script src="bitset.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body oncontextmenu="return false">
+        <div id="content">
+            <canvas id="mycanvas"></canvas><br>
+
+            <table>
+            <tr>
+                <td colspan="2"><button id="setbutton">SET PARAMS!</button></td>
+            </tr>
+            <tr>
+                <td>WIDTH:</td>
+                <td><input id="input_width" size=5 value=15></td>
+            </tr>
+            <tr>
+                <td>HEIGHT:</td>
+                <td><input id="input_height" size=5 value=26></td>
+            </tr>
+            <tr>
+                <td>Pixelsize:</td>
+                <td><input id="input_pixelsize" size=5 value=20></td>
+            </tr>
+            
+
+            </table> 
+            
+            <input id="candraw" type="checkbox" >Draw img<br>           
+            <input type="file" id="file"><br>
+            <textarea id="output" style="-webkit-box-sizing: border-box;" rows="4" disabled="disabled" value=""> </textarea>
+
+            
+        </div>
+        
+    </body>
+</html>      
